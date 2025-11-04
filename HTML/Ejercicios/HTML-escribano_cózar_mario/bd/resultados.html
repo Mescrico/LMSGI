@@ -25,8 +25,9 @@
         </nav>
 
         <h1>Ejemplo de tabla HTML</h1>
-        <p>En primer lugar observe la <b>siguiente figura:</b></p>
+        <p>En primer lugar observe la <strong>siguiente figura:</strong></p>
 
+        <!-- NO
         <table border="1">
             <caption>Resultados Módulo</caption>
             <tr>
@@ -59,9 +60,58 @@
                 <td style="text-align: center;">6</td>
                 <td style="text-align: right;">18</td>
             </tr>
-        </table>
+        </table> -->
+        
+
+
+
+
+        <p>En primer lugar observe <strong>esta figura.</strong></p>
+        
+        <figure>
+            <img src="../figuras/tabla-examen-html.png" alt="resultados del módulo" width="434" height="124">
+        </figure>
+
         <p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
 
-        <p><b>Aviso: </b> Aquí debe aparecer su tabla HTML.</p>
+        <p><strong>Aviso: </strong> Aquí debe aparecer su tabla HTML.</p>
+
+        <table border="">
+            <caption>Resultados módulo</caption>
+            <tr>
+                <th scope="col">Examen</th>
+                <th scope="col">Aprobados</th>
+                <th scope="col">Suspensos</th>
+                <th scope="col">No presentados</th>
+                <th scope="col">Total</th>
+            </tr>
+            <tr>
+                <th scope="row">1º Ev</th>
+                <td colspan="2">8</td>
+                <td>14</td>
+                <td>30</td>
+                
+            </tr>
+            <tr>
+                <th scope="col">2º Ev</th>
+                <td rowspan="2">9</td>
+                <td>7</td>
+                <td>9</td>
+                <td>26</td>
+                
+            </tr>
+            <tr>
+                <th scope="col">3º Ev</th>
+                <td rowspan="2" colspan="2">6</td>
+                <td>21</td>
+                
+            </tr>
+            <tr>
+                <th scope="col">Final</th>
+                <td>6</td>
+                <td>18</td>
+                
+            </tr>
+        </table>
     </body>
 </html>

@@ -24,10 +24,16 @@
                 </ul>
         </nav>
 
+        <!-- NO
         <header>
             <h1>Blog</h1>
             <p>Hablaremos de dos grandes temas: HTML y CSS</p>
-        </header>
+        </header> -->
+
+        <h1>Blog</h1>
+        <p>
+            Hablaremos de dos grandes temas: HTML y CSS
+        </p>
 
         <nav>
             <h2>Indice del blog</h2>
@@ -64,28 +70,34 @@
 
         <section>
             <h2 id="bloquehtml">Bloque HTML</h2>
-
-                <h3 id="cerraretiquetas">Artículo 1: Cerrar las etiquetas</h3>
+                <article>
+                    <h3 id="cerraretiquetas">Artículo 1: Cerrar las etiquetas</h3>
+                </article>
+                
                     <p>Back in the day, it wasn't uncommon to see things like this:</p>
 
-                    <div style="text-align: left;">
-                        <pre><code>
-                            &lt;li&gt;Some text here.
-                            &lt;li&gt;Some new text here.
-                            &lt;li&gt;You get the idea.
-                        </code></pre>
-                    </div>
+                    <pre>
+                        <code>
+                            &lt;li>Some text here.
+                            &lt;li>Some new text here.
+                            &lt;li>You get the idea.
+                        </code>
+                    </pre>
 
                     <p>Notice how the wrapping UL/OL tag was omitted. Additionally, many chose to leave off the closing LI tags as well. By today's standards, this is simply bad practice and should be 100% avoided. Always, always close your tags. Otherwise, you'll encounter validation and glitch issues at every turn.</p>
 
 
-                <h3 id="neveruse">Artículo 2: Never Use Inline Styles</h3>
+                <article>
+                    <h3 id="neveruse">Artículo 2: Never Use Inline Styles</h3>
+                </article>
                     <p>When you're hard at work on your markup, sometimes it can be tempting to take the easy route and sneak in a bit of styling. 1</p>
                     
                     <div style="text-align: left;">
-                        <pre><code>
-                            &lt;p style="color: red;"&gt;I'm going to make this text red so that it really stands out and makes people take notice! &lt;/p&gt;
-                        </code></pre>
+                        <pre>
+                            <code>
+                                &lt;p style="color: red;">I'm going to make this text red so that it really stands out and makes people take notice! &lt;/p>
+                            </code>
+                        </pre>
                     </div>
                     <p>Sure -- it looks harmless enough. However, this points to an error in your coding practices.</p>
         </section>
@@ -98,18 +110,7 @@
 
                     <p>This distinction is made by choosing different fonts, colors, size, capitalization, and other properties for each type of text content. Good hierarchy makes complex information easier to digest and guides users through your content.</p>
 
-                    <div>
-                        <h2>The Amazing T-Rex</h2>
-                        <h3>Some Facts</h3>
-                        <p>Let's learn more about one of the most famous...</p>
-                    </div>
-
-                    <div>
-                        <h1>The amazing T-Rex</h1>
-                        <h2>Some Facts</h2>
-                        <p style="color: green;">Let-s learn more about one of the most famous dinosaurs</p>
-                        <p>The Tyrannosaurus Rex, or...</p>
-                    </div>
+                    <img src="../figuras/typography_hiearchy-1_vab7fy.jpg" alt="tabla comparativa" width="822" height="354">
 
                     <p>Left: Poor hierarchy. There’s not much differentiation in the size or color of the text to help users digest the content. Right: Better hierarchy that uses more variety in font size, color, and spacing to help users quickly navigate the content.</p>
 
