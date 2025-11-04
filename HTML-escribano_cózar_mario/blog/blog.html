@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+    </head>
+    <body>
+        <nav>
+                <h2>Recorra nuestro sitio web</h2>
+                <ul>
+                    <a href="../index.html">
+                        <li>Página inicial</li>
+                    </a>
+                    <a href="../bd/sql/recogeDatos.html">
+                        <li>Recogida de datos</li>
+                    </a>
+                    <a href="../bd/resultados.html">
+                        <li>Tabla de resultados</li>
+                    </a>
+                    <a href="blog.html">
+                        <li>Nuestro blog</li>
+                    </a>
+                </ul>
+        </nav>
+
+        <header>
+            <h1>Blog</h1>
+            <p>Hablaremos de dos grandes temas: HTML y CSS</p>
+        </header>
+
+        <nav>
+            <h2>Indice del blog</h2>
+            <ul>
+                <a href="#bloquehtml">
+                    <li>Bloque HTML</li>
+                </a>
+                <ul>
+                    <a href="#cerraretiquetas">
+                        <li>Cerrar etiquetas</li>
+                    </a>
+                    <a href="#neveruse">
+                        <li>Evitar estilos inline</li>
+                    </a>
+                </ul>
+                <a href="#bloquecss">
+                    <li>Bloque CSS</li>
+                </a>
+                <ul>
+                    <a href="#jerarquia">
+                        <li>Jerarquía</li>
+                    </a>
+                    <a href="#fuentes">
+                        <li>Fuentes</li>
+                    </a>
+                    <ul>
+                        <a href="#sombra">
+                            <li>Text Shadow</li>
+                        </a>
+                    </ul>
+                </ul>
+            </ul>
+        </nav>
+
+        <section>
+            <h2 id="bloquehtml">Bloque HTML</h2>
+
+                <h3 id="cerraretiquetas">Artículo 1: Cerrar las etiquetas</h3>
+                    <p>Back in the day, it wasn't uncommon to see things like this:</p>
+
+                    <div style="text-align: left;">
+                        <pre><code>
+                            &lt;li&gt;Some text here.
+                            &lt;li&gt;Some new text here.
+                            &lt;li&gt;You get the idea.
+                        </code></pre>
+                    </div>
+
+                    <p>Notice how the wrapping UL/OL tag was omitted. Additionally, many chose to leave off the closing LI tags as well. By today's standards, this is simply bad practice and should be 100% avoided. Always, always close your tags. Otherwise, you'll encounter validation and glitch issues at every turn.</p>
+
+
+                <h3 id="neveruse">Artículo 2: Never Use Inline Styles</h3>
+                    <p>When you're hard at work on your markup, sometimes it can be tempting to take the easy route and sneak in a bit of styling. 1</p>
+                    
+                    <div style="text-align: left;">
+                        <pre><code>
+                            &lt;p style="color: red;"&gt;I'm going to make this text red so that it really stands out and makes people take notice! &lt;/p&gt;
+                        </code></pre>
+                    </div>
+                    <p>Sure -- it looks harmless enough. However, this points to an error in your coding practices.</p>
+        </section>
+
+        <section>
+            <h2 id="bloquecss">Bloque CSS</h2>
+
+                <h3 id="jerarquia">Artículo 1: Hierarchy provides a clear visual order to content</h3>
+                    <p>Hierarchy is something you really only notice when it’s not there. In typography, hierarchy refers to the visual difference between various pieces of text. It’s the distinction between headings, paragraphs, links, and other text styles.</p>
+
+                    <p>This distinction is made by choosing different fonts, colors, size, capitalization, and other properties for each type of text content. Good hierarchy makes complex information easier to digest and guides users through your content.</p>
+
+                    <div>
+                        <h2>The Amazing T-Rex</h2>
+                        <h3>Some Facts</h3>
+                        <p>Let's learn more about one of the most famous...</p>
+                    </div>
+
+                    <div>
+                        <h1>The amazing T-Rex</h1>
+                        <h2>Some Facts</h2>
+                        <p style="color: green;">Let-s learn more about one of the most famous dinosaurs</p>
+                        <p>The Tyrannosaurus Rex, or...</p>
+                    </div>
+
+                    <p>Left: Poor hierarchy. There’s not much differentiation in the size or color of the text to help users digest the content. Right: Better hierarchy that uses more variety in font size, color, and spacing to help users quickly navigate the content.</p>
+
+
+                <h3 id="fuentes">Artículo 2: choosing fonts</h3>
+
+                    <p>With typography, we need to make sure it is as easy to read as possible. The greatest overall factor in readability is the font you choose—which is a huge topic. There are many factors that determine how "readable" a font is. Some fonts are made specifically to be used as headings or short lines of text; these are called "display" fonts, and they often have more personality than fonts designed to be used for text. Unique flourishes and quirks make display fonts harder to read at small sizes and when part of a large paragraph. As a rule of thumb, use a more straightforward font for text and only use display fonts for headings.</p>
+                    <p>If you’re in a pinch and need a readable font, try Google Fonts. Add a paragraph of text to the preview field and size it roughly how it will display on your website. You can then narrow down your results to serif or sans-serif and scan the list of fonts for one that is easy to read. Roboto, Noto Sans, Merriweather, and PT Serif are all very readable options.</p>
+
+                    <img src="../figuras/googlefonts.gif" alt="Fuentes Google" width="640" height="477">
+
+                        <h4 id="sombra">Text Shadow</h4>
+                            <p>Este código define dos sombras (text shadow) para elementos p. El número de sombras puede ampliarse según se desee; no olvides poner siempre una coma para separar las cifras.</p>
+                            <p>Los dos primeros elementos determinan la posición de la sombra (primero la coordenada para X y luego para Y). La tercera cifra define el tamaño. Por último se especifica el color de la sombra, ya sea por indicación RGBA (300, 180, 100, 1) como en la primera línea, o por indicación absoluta como en la segunda línea (red). Una vez aplicado el anterior comando CSS, el texto se verá de la siguiente forma:</p>
+                            <img src="../figuras/css-text-shadow.png" alt="Texto sombra" width="334" height="102">
+        </section>
+    </body>
+</html>

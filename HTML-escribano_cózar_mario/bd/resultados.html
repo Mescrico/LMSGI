@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabla de resultados</title>
+    </head>
+    <body>
+        <nav>
+            <h2>Recorra nuestro sitio web</h2>
+            <ul>
+                <a href="../index.html">
+                    <li>Página inicial</li>
+                </a>
+                <a href="sql/recogeDatos.html">
+                    <li>Recogida de datos</li>
+                </a>
+                <a href="resultados.html">
+                    <li>Tabla de resultados</li>
+                </a>
+                <a href="../blog/blog.html">
+                    <li>Nuestro blog</li>
+                </a>
+            </ul>
+        </nav>
+
+        <h1>Ejemplo de tabla HTML</h1>
+        <p>En primer lugar observe la <b>siguiente figura:</b></p>
+
+        <table border="1">
+            <caption>Resultados Módulo</caption>
+            <tr>
+                <td>Examen</td>
+                <td style="text-align: right;">Aprobados</td>
+                <td style="text-align: right;">Suspensos</td>
+                <td style="text-align: right;">No Presentados</td>
+                <td style="text-align: right;">Total</td>
+            </tr>
+            <tr>
+                <td>1º Ev</td>
+                <td colspan="2" style="text-align: center; background-color: gray;">8</td>
+                <td style="text-align: center;">14</td>
+                <td style="text-align: right;">30</td>
+            </tr>
+            <tr>
+                <td>2º Ev</td>
+                <td rowspan="2" style="text-align: center; background-color: gray;">9</td>
+                <td style="text-align: center;">7</td>
+                <td style="text-align: center;">9</td>
+                <td style="text-align: right;">26</td>
+            </tr>
+            <tr>
+                <td>3º Ev</td>
+                <td rowspan="2" colspan="2" style="text-align: center; background-color: gray;">6</td>  
+                <td style="text-align: right;">21</td>
+            </tr>
+            <tr>
+                <td>Final</td>
+                <td style="text-align: center;">6</td>
+                <td style="text-align: right;">18</td>
+            </tr>
+        </table>
+        <p>Ahora codifique una tabla HTML que represente la información de la figura anterior. Le recordamos que lo importante es la semántica, no la presentación.</p>
+
+        <p><b>Aviso: </b> Aquí debe aparecer su tabla HTML.</p>
+    </body>
+</html>
