@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Ejemplo inicial formulario</h1>
+
+        <!-- <form action="http://midominio.com/altas" method="get">
+        <input type="text">
+        <input type="button" value="Botón">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar"> 
+        </form> -->
+
+        <form action="midominio.com/altas" method="post">
+
+            <p>
+                <!-- El for="" tiene que valer lo mismo que el id="" para que la etiqueta este bien colocada -->
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario"> <!-- El name="" es para que en el link aparezca http://ejemplo.com?name-->
+            </p>
+
+
+            <p>
+                <label for="clave">Introduce la clave</label>
+                <input type="password" name="clave" id="clave">
+            </p>
+
+
+            <p>
+                <label>Fecha compra <br>
+                    <input type="date" name="fcompra">
+                </label>
+            </p>
+
+
+            <p>
+                <label>Correo electrónico <br>
+                    <input type="email" name="correo">
+                </label>
+            </p>
+            <input type="submit" value="Enviar">
+
+        </form>
+        
+
+
+        </form>
+    </body>
+</html>
