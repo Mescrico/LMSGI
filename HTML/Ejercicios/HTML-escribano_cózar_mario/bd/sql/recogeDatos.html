@@ -26,5 +26,52 @@
         </nav>
 
         <h1>Formulario de recogida de datos</h1>
+
+        <form action="/procesa/altas.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Datos de la compra</legend>
+
+                <p> Seleccione la marca <br>
+                    <label><input type="radio" name="marca" value="A">A</label>
+                    <label><input type="radio" name="marca" value="B">B</label>
+                    <label><input type="radio" name="marca" value="C">C</label>
+                </p>
+
+                <p>
+                    <label> Número de unidades
+                        <input type="number" name="unidades" id="unidades" min="0" value="1" step=".1"> <!-- min para valor minimo, value para valor predefinido, step para dar salto -->
+                    </label>
+                </p>
+
+                <p> Adjuntar 2 ficheros: factura de compra y fotocopia del DNI <br>
+                    <label>
+                        <input type="file" name="factura y dni" multiple>
+                    </label>
+                </p>
+
+                <p> Fecha compra <br>
+                    <label>
+                        <input type="date" name="fechacompra">
+                    </label>
+                </p>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <p> Usuario
+                    <label>
+                        <input type="email" name="usuario" id="usuario" placeholder="Correo electrónico">
+                    </label>
+                </p>
+
+
+            </fieldset>
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+        </form>
     </body>
 </html>
