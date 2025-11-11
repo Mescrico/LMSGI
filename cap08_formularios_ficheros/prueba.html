@@ -15,7 +15,9 @@
         <input type="reset" value="Limpiar"> 
         </form> -->
 
-        <form action="midominio.com/altas" method="post">
+        <form action="midominio.com/altas" method="get" enctype="multipart/form-data">
+
+            <!-- SI INPUT NO ESTA DENTRO DE LABEL, LABEL TIENE QUE IR CON FOR= -->
 
             <p>
                 <!-- El for="" tiene que valer lo mismo que el id="" para que la etiqueta este bien colocada -->
@@ -26,28 +28,77 @@
 
             <p>
                 <label for="clave">Introduce la clave</label>
-                <input type="password" name="clave" id="clave">
+                <input type="password" name="clave" id="clave" minlength="5" maxlength="10">
             </p>
 
-
+            
             <p>
                 <label>Fecha compra <br>
                     <input type="date" name="fcompra">
                 </label>
             </p>
 
+            <!-- Cuando ponemos un archivo en el form debemos poner enctype="multipart/form-data" -->
+            <p>
+                <label> Fichero <br>
+                    <input type="file" name="factura">
+                </label>
+            </p>
 
             <p>
                 <label>Correo electrónico <br>
-                    <input type="email" name="correo">
+                    <input type="email" name="correo" placeholder="Introduzca su correo electrónico" size="30">
                 </label>
             </p>
-            <input type="submit" value="Enviar">
 
+            <!-- Cada input tipo checkbox debe tener su propia label y value. El name es el mismo para todos -->
+            <p>
+                <label> Seleccione sus preferencias
+                    <label><input type="checkbox" name="preferencias" value="X">Xokas</label>
+                    <label><input type="checkbox" name="preferencias" value="E">Elchokas</label>
+                    <label><input type="checkbox" name="preferencias" value="C">CathyVipi</label>
+                </label>
+            </p>
+            
+            <!-- Cada input tipo radio con su propia label y value. El name es el mismo para todos -->
+            <p> Seleccione su módulo preferido
+                <label><input type="radio" name="modulo" value="ldm">Lenguaje de marcas</label>
+                <label><input type="radio" name="modulo" value="bdd">Base de datos</label>
+                <label><input type="radio" name="modulo" value="s">Sistemas</label>
+            </p>            
+
+            <p> Seleccione su color <br>
+                <label><input type="color" name="micolor" id="micolor"></label>
+            </p>    
+
+            <p> 
+                <label> Texto de su queja <br>
+                    <input type="text" name="queja" size="30" minlength="20" maxlength="29">
+                </label>
+            </p>
+
+            <p>
+                <label> Texto de su queja 2 <br>
+                    <textarea name="miqueja" cols="40" rows="5"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <label for="provincia">Seleccione provincia <br></label>
+                <select name="provincia" id="provincia">
+                    <!-- selected es para que se seleccione predefinidamente -->
+                    <option disabled selected>Ninguna</option> <!-- Para que haya opcion de ninguna hay que poner dentro del option disabled -->
+                    <option value="CA">Cadiz</option>
+                    <option value="SE">Sevilla</option>
+                    <option value="MA">Malaga</option>
+                    <option value="JA">Jaen</option>
+                </select>
+            </p>
+
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
         </form>
         
-
-
-        </form>
     </body>
 </html>
