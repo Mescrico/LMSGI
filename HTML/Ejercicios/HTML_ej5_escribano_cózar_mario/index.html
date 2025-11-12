@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <h2>Zona de navegación de nuesta web.</h2>
+      <ol>
+        <a href="">
+          <li>Página inicial</li>
+        </a>
+        <a href="">
+          <li>Nuestro blog</li>
+        </a>
+        <a href="">
+          <li>Resultados</li>
+        </a>
+        <a href="">
+          <li>Ayuda HTML</li>
+        </a>
+      </ol>
+    </nav>
+
+    <h1>Encuesta alumnado</h1>
+
+    <form action="/server/procesa.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Datos iniciales</legend>
+      
+
+      <p> 
+        <label> Seleccione sus preferencias <br>
+          <label><input type="checkbox" name="preferencias" value="A">HTML</label> <br>
+          <label><input type="checkbox" name="preferencias" value="B">Estilos CSS</label> <br>
+          <label><input type="checkbox" name="preferencias" value="C">El lenguaje JaVAsCRIPT</label>
+        </label>
+      </p>
+
+      <p>
+        <label> Indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019) <br>
+          <input type="date" name="fecha"> 
+        </label>
+      </p>
+
+      <p>
+        <label>Adjunta dos fotos, una tipo DNI y otra de cuerpo entero <br>
+          <input type="file" name="fotos" multiple>
+        </label>
+      </p>
+
+      <p>
+        <label>Vamos a pintar la clase: seleccione el color preferido (por defecto rojo)
+          <input type="color" name="color" value="#ff0000">
+        </label>
+      </p>
+
+      <p>
+        <label>Indique si dispone de ella, su página web:
+          <input type="text" name="paginaweb" size="25">
+        </label>
+      </p>
+
+      <p>
+        <label>Indique su código de alumno:
+          <input type="text" name="codigo" placeholder="ver patron...">
+        </label>Formato: tres mayusculas seguidas de 1 o 2 dígitos.
+      </p>
+
+      <p>Seleccione zona donde víve <br>
+        <label><input type="radio" name="zona" value="jerez" checked>Jerez (* Valor por defecto)</label> <br>
+        <label><input type="radio" name="zona" value="pedanias">Pedanías: Cuartillos, Estella, etc..</label> <br>
+        <label><input type="radio" name="zona" value="fuera">Fuera de Jerez: El Puerto, Chipiona ,etc..</label>
+      </p>
+
+      <p>
+        <label><input type="checkbox" name="notificaciones" required>Acepto recibir notificaciones del estado de la encuesta (campo obligatorio)</label>
+      </p>
+
+
+      </fieldset>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar">
+    </form>
+    
+  </body>
+</html>
+
+
+  
+
+    
+      
+      
+      
+      
+    
+  
+
+
+
+  
+    
+      
+
+      Seleccione a continuación cuales son los temas de su interés:
+      
+        
+           HTML
+         
+        
+           Estilos CSS
+        
+         
+           El lenguaje JaVAsCRIPT
+        
+      
+      
+        
+        	indique la fecha de incorporación al curso (que debe ser posterior al 15 de septiembre de 2019) 
+        	
+        
+
+      
+
+      
+        Adjunta dos fotos, una tipo DNI y otra de cuerpo entero 
+        
+      
+      
+
+      
+        Vamos a pintar la clase: selecione el color preferido (por defeto rojo)
+        
+      
+      
+        
+          Indique si dispone de ella, su página web:
+          
+        
+      
+      
+        Indique su código de alumno: 
+        
+        Formato: tres mayusculas seguidas de 1 o 2 dígitos.
+      
+
+      
+        Seleccione zona donde víve 
+        Jerez
+        (* Valor por defecto)
+        
+        Pedanías: Cuartillos, Estella, etc.. 
+        Fuera de Jerez: El Puerto, Chipiona ,etc.. 
+      
+
+
+      
+        
+          
+          Acepto recibir noticaciones del estado de la encuesta (campo
+          obligatorio)
+        
+      
+    
+    
+      
+      
+    
+  
+
+
