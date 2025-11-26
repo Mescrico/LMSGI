@@ -27,8 +27,13 @@ h1, h2, h3 {
     text-decoration: overline;
 }
 
-
-
 p.novedad.urgente { /* Tiene que cumplir las condiciones */
     color: hotpink;
 }
+
+/* selector de id */
+p#assumenda {
+    text-align: center;
+}
+
+

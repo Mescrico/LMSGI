@@ -1,0 +1,27 @@
+/* Avanzados */
+
+article p { /* hijo o nieto o lo que sea */
+    color: aqua;
+}
+
+article > p { /* hijo directo */
+    color: hotpink;
+}
+
+/* Adyacente */
+
+h1 + p, h2 + p { /* En este caso, es solo para el parrafo que va después de un h1 SIN QUE ESTÉ ESTE DENTRO */
+    background-color: midnightblue;
+    color: beige;
+}
+
+/* Sibling */
+
+h3 ~ h4 {
+    background-color: khaki;
+}
+
+/* atributos */
+dfn[title] {
+    background-color: red;
+}
