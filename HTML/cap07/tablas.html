@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cap 06 Tablas</title>
-    <style> 
+    <style>
         th[scope="row"] {
             background-color: green;
         }
+
         th {
             background-color: yellow;
         }
-        [colspan], 
-        [rowspan] 
-          { background-color: silver;}
 
+        [colspan],
+        [rowspan] {
+            background-color: silver;
+        }
     </style>
 </head>
+
 <body>
 
     <h1>Ejemplos iniciales de tablas HTML</h1>
@@ -24,7 +28,7 @@
     <h2>Tabla inicial</h2>
 
     <table border="1">
-      <!--   tr*5>td*4>lorem1 -->
+        <!--   tr*5>td*4>lorem1 -->
         <tr>
             <td>Lorem, ipsum.</td>
             <td>Dolorum, non?</td>
@@ -76,7 +80,7 @@
             <td>5</td>
             <td>Consultar</td>
         </tr>
-        
+
     </table>
 
     <h2> Combinaciones: colspan (horizontal) y rowspan (vertical)</h2>
@@ -87,7 +91,7 @@
             <td>Similique, quasi!</td>
             <td>Ducimus, vero.</td>
             <td colspan="3">Voluptatibus, labore.</td>
-<!--             <td>Minima, dolorum.</td>
+            <!--             <td>Minima, dolorum.</td>
             <td>Ea, perferendis.</td> -->
         </tr>
         <tr>
@@ -103,15 +107,15 @@
             <td>Accusamus, id!</td>
             <td>Ad, voluptatibus.</td>
             <td colspan="2" rowspan="3">Distinctio, vero?</td>
-<!--             <td>Expedita, ratione.</td> -->
+            <!--             <td>Expedita, ratione.</td> -->
             <td>Facilis, rerum.</td>
         </tr>
         <tr>
-       <!--      <td>Lorem, ipsum.</td> -->
+            <!--      <td>Lorem, ipsum.</td> -->
             <td>Aperiam, odit.</td>
             <td>Recusandae, tempora!</td>
             <td>Pariatur, nobis?</td>
-<!--             <td>Suscipit, quam.</td>
+            <!--             <td>Suscipit, quam.</td>
             <td>Voluptatem, explicabo.</td> -->
         </tr>
         <tr>
@@ -119,12 +123,28 @@
             <td>Sequi, commodi.</td>
             <td>Ipsam, at.</td>
             <td>Excepturi, tempora!</td>
-<!--             <td>Dolorum, maxime!</td>
+            <!--             <td>Dolorum, maxime!</td>
             <td>Magni, aut?</td> -->
         </tr>
 
     </table>
 
-    
+
+
+    <figure>
+        <table border="">
+            <tr>
+                <th>Año</th>
+                <th>Ventas</th>
+            </tr>
+            <tr>
+                <td>2024</td>
+                <td>1200</td>
+            </tr>
+        </table>
+        <figcaption>Tabla de ventas anuales.</figcaption>
+    </figure>
+
 </body>
+
 </html>
