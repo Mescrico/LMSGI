@@ -1,0 +1,39 @@
+/* tag */
+h1 {
+    text-align: center;
+}
+
+p {
+    color: midnightblue;
+}
+
+/* descendiente */
+section p {
+    color: aquamarine;
+}
+
+aside p {
+    background-color: beige;
+}
+
+/* agrupación */
+h1, h2, h3 {
+    text-decoration: underline;
+}
+
+/* selector de clases */
+
+.novedad {
+    text-decoration: overline;
+}
+
+p.novedad.urgente { /* Tiene que cumplir las condiciones */
+    color: hotpink;
+}
+
+/* selector de id */
+p#assumenda {
+    text-align: center;
+}
+
+
