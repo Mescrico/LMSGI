@@ -34,7 +34,7 @@
             
             <p>
                 <label>Fecha compra <br>
-                    <input type="date" name="fcompra">
+                    <input type="date" name="fcompra" min="2000-01-01" > <!-- YYYY-MM-DD -->
                 </label>
             </p>
 
@@ -84,7 +84,7 @@
             </p>
 
             <p>
-                <label for="provincia">Seleccione provincia <br></label>
+                <label for="provincia">Seleccione provincia <br>
                 <select name="provincia" id="provincia">
                     <!-- selected es para que se seleccione predefinidamente -->
                     <option disabled selected>Ninguna</option> <!-- Para que haya opcion de ninguna hay que poner dentro del option disabled -->
@@ -92,7 +92,7 @@
                     <option value="SE">Sevilla</option>
                     <option value="MA">Malaga</option>
                     <option value="JA">Jaen</option>
-                </select>
+                </select></label>
             </p>
 
 

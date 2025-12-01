@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="dominio/altas.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Repaso Formularios</legend>
+
+                <p>
+                    <label>Seleccione sus preferencias <br>
+                        <label><input type="checkbox" name="preferencias" value="A">HTML</label> <br>
+                        <label><input type="checkbox" name="preferencias" value="B">CSS</label> <br>
+                        <label><input type="checkbox" name="preferencias" value="C">JS</label>
+                    </label>
+                </p>
+
+                <p><label>Fecha <br><input type="date" name="fecha" min="2019-09-15"></label></p>
+
+                <p><label>Subida de archivos <br><input type="file" name="archivos" multiple></label></p>
+
+                <p><label>Seleccionar color<input type="color" name="color" value="#ff0000"></label></p>
+
+                <p><label>Introducir página web<input type="url" name="paginaweb" size="10"></label></p>
+
+                <p>Código Alumno<label><input type="text" name="pattern" pattern="[A-Z]{3}[0-9]{2}" placeholder="[A-Z]{3}[0-9]{2}"></label></p>
+
+                <p> Lugar residencial <br>
+                    <label><input type="radio" name="zona" id="jerez" checked>Jerez</label> <br>
+                    <label><input type="radio" name="zona" id="pedania">Pedania</label> <br>
+                    <label><input type="radio" name="zona" id="fuera">Fuera</label>
+                    <label><input type="radio" name="" id=""></label>
+                </p>
+
+
+                <p>Contador <br><label><input type="number" name="contador" min="0" max="10" step="0.1"></label></p>
+                <p><label><input type="checkbox" name="notificaciones" required>Recibir notificaciones</label></p>
+            </fieldset>
+
+            <input type="reset" value="Limpiar">
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
