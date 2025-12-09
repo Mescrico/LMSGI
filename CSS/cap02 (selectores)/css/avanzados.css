@@ -1,5 +1,7 @@
 /* Avanzados */
 
+/* hijo */
+
 article p { /* hijo o nieto o lo que sea */
     color: aqua;
 }
@@ -8,6 +10,7 @@ article > p { /* hijo directo */
     color: hotpink;
 }
 
+
 /* Adyacente */
 
 h1 + p, h2 + p { /* En este caso, es solo para el parrafo que va después de un h1 SIN QUE ESTÉ ESTE DENTRO */
@@ -15,13 +18,54 @@ h1 + p, h2 + p { /* En este caso, es solo para el parrafo que va después de un 
     color: beige;
 }
 
+
 /* Sibling */
 
-h3 ~ h4 {
+h3 ~ h4 { /* solo se aplica al h4 */
     background-color: khaki;
 }
+
 
 /* atributos */
 dfn[title] {
     background-color: red;
+}
+
+abbr[title] {
+    background-color: black;
+}
+
+[title="pendiente hola"] { /* tittle tiene que valer exactamente eso */
+    background-color: tomato;
+}
+
+[title*="pendiente"] { /* title debe de contener eso */
+    background-color: yellow;
+}
+
+[href$=".pdf"] { /* % es para que detecte que acaba por eso */
+    background-color: blueviolet;
+}
+
+/* un elemento empezando desde el ppo */
+ul#prueba1 li:nth-child(2) { /* para el segundo li dentro de un ul de id prueba1 */
+    color: pink;
+}
+
+ul#prueba2 :nth-child(3n+1) { /*para el primero cada 3, 1(si) 2(no) 3(no) 4(si) 5(no) .... */
+    color: brown;
+}
+
+ol#prueba :first-child {
+    color: gray;
+}
+
+ol#prueba :last-child {
+    color: gray;
+}
+
+
+/* a partir del quinto elemento */
+ul#prueba :nth-child(n+5){
+    color: khaki;
 }
