@@ -1,0 +1,11 @@
+@font-face {
+    font-family: nuevaFuente;
+    src: url(Noto_Sans/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
+.nuevaFuente {
+    font-family: nuevaFuente, sans-serif;
+}
+h1 {
+    font-family: nuevaFuente, sans-serif;
+}

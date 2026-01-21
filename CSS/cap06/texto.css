@@ -1,0 +1,70 @@
+h1::first-letter {
+    font-size: 3em; /* aumenta el tamaño de la primera letra */
+    color: orange; /* cambia el color de la primera letra */
+}
+
+h1 {
+    color: red;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 2px solid red; /* línea debajo del texto */
+    text-decoration: underline black 4px dashed; /* subraya el texto */
+    text-transform: lowercase; /* convierte a minúsculas */
+}
+
+em{
+    font-style: normal;
+    font-weight: bold;
+    background-color: turquoise;
+}
+h2 + p {
+    text-decoration: overline wavy blue; /* línea encima del texto */
+    text-transform: uppercase; /* convierte a mayúsculas */
+}
+
+h2 + p::first-line {
+    font-size: 2em; /* aumenta el tamaño de la primera letra */
+    color: purple; /* cambia el color de la primera letra */
+}
+#fuentes p {
+    font-family: Arial, Helvetica, sans-serif; /* si primera opción no disponible, se usa la siguiente */
+    text-align: justify; /* texto justificado */
+    text-indent: 2em; /* sangría primera línea */
+}
+
+#fuentes h2{
+    font: 2.5em "Courier New", Courier, monospace;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h3{
+    font-variant: small-caps;
+}
+
+img{
+    vertical-align: middle; /* alinea la imagen */
+}
+
+aside p:nth-of-type(1){
+    white-space: pre; 
+}
+
+aside p:nth-of-type(2){
+    white-space: nowrap; /* evita saltos de línea */
+}
+aside p:nth-of-type(3){
+    white-space: pre-wrap; /* respeta espacios y saltos de línea, pero permite saltos automáticos */
+}
+aside p:nth-of-type(4){
+    white-space: pre-line; /* respeta saltos de línea, pero elimina espacios en blanco extra */
+}
+aside p:nth-of-type(5){
+    text-overflow: ellipsis; /* añade puntos suspensivos al final del texto que no cabe */
+    overflow: hidden; /* oculta el texto que no cabe */
+    white-space: nowrap; /* evita saltos de línea */
+    width: 200px; /* ancho fijo para que funcione text-overflow */
+    display: block; /* necesario para aplicar ancho fijo */
+}

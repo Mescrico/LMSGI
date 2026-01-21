@@ -1,0 +1,40 @@
+p{
+    border: 3px red solid;
+}
+
+h2{
+    border-bottom-color: blue;
+    border-bottom-width: 3px;       /* Lo puedes poner como los 3 primeros */
+    border-bottom-style: dashed;
+    border-top: green 5px double; /* O así resumido */
+}
+
+p{
+    padding: 4px; /* Espacio entre el borde y el contenido */
+    margin: 4px;
+    background-image: url("jake.png");
+    background-repeat:repeat-y;
+    background-position: right top;
+    padding-right: 70px; /* Para que no se superponga el texto con la imagen */
+}
+
+img{
+    border: 5px black solid;
+    padding: 30px;
+    margin: 20px 10px 5px 3px; /* Espacio entre el borde y los elementos vecinos */
+}
+
+section{
+    background: cyan; 
+}
+
+h1{
+    width: 10em;
+    margin: auto; /* Centrar el h1 */
+    border: 2px black solid;
+    box-shadow: 20px 10px /*3px Este 3er numero es el desenfoque*/ red; /* Sombra */
+    border-radius: 40px; /* Bordes redondeados */
+    padding: 10px; /* Modificar para que el borde redondeado no toque con el texto */
+    text-shadow: 5px 3px red; /* Sombra del texto */
+    
+}

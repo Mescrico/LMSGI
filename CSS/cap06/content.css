@@ -1,0 +1,31 @@
+h1::before {
+    content: "Título: "; /* agrega texto antes del h1 */
+    background-color: yellow;
+}
+
+h1::after {
+    content: " (Fin del título)"; /* agrega texto después del h1 */
+    border: 2px solid green;
+}
+
+abbr::after {
+    content: " - " attr(title) " - "; /* muestra el atributo title */
+    font-style: italic;
+    color: fuchsia;
+}
+
+section p {
+    counter-increment: p; /* incrementa el contador para cada párrafo */
+}
+section p::before {
+    content: " (" counter(p) ") "; /* contador antes de cada párrafo */
+    background-color: yellow;
+}
+
+.noto-sans {
+font-family: "Noto Sans", sans-serif;
+}
+
+h2 {
+    font-family: Noto Sans, sans-serif;
+}
