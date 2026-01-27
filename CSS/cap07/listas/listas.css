@@ -1,0 +1,14 @@
+/* cambiar el estilo de las listas desordenadas */
+ul {
+    list-style-type: circle; /* disc, square, circle, disclosure xxx, cambia el marcador a un cuadrado */
+    list-style-position: inside; /* inside, outside, cambia la posición del marcador */
+}
+/* cambiar el estilo de las listas ordenadas */
+ol {
+    list-style-type: upper-roman; /* cambia el marcador a números romanos en mayúsculas */
+    list-style-position: outside; /* inside, outside, cambia la posición del marcador */
+}
+
+ul {
+    list-style-image: url('icons8-right-arrow-16.png'); /* usa una imagen personalizada como marcador */
+}

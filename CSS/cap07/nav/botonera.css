@@ -1,0 +1,19 @@
+nav ul {
+    list-style-type: none; /* elimina los marcadores predeterminados */
+    margin: 0; /* elimina el margen predeterminado */
+    padding: 0; /* elimina el relleno predeterminado */
+    overflow: hidden; /* asegura que el contenedor abarque los elementos flotantes */
+    background-color: burlywood; /* color de fondo del menú de navegación */
+    text-align: center;
+}
+
+nav ul li a {
+    display: block;
+    border-style: double;
+}
+
+/*presentacion*/
+nav[class]::before {
+    content: "Tipo: " attr(class);
+    font-style: italic;
+}

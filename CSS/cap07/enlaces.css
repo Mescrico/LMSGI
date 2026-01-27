@@ -1,0 +1,37 @@
+/* modificar enlaces */
+section p a {
+    text-decoration: none; /* quita el subrayado */
+    color: darkblue; /* cambia el color del enlace */
+}
+
+/* al pasar el ratón sobre el enlace */
+section p a:hover {
+    text-decoration: underline; /* subraya el enlace */
+    color: red; /* cambia el color al pasar el ratón */
+}
+/* enlaces visitados */
+section p a:visited {
+    color: purple; /* cambia el color de los enlaces visitados */
+}
+/* enlaces activos */
+section p a:active {
+    color: orange; /* cambia el color del enlace activo */
+}
+
+/* enlaces que comienzan con https */
+a[href^="https"] {
+    font-weight: bold; /* enlaces que comienzan con https en negrita */
+}
+/* enlaces que terminan con .pdf */
+a[href$=".pdf"] {
+    /* poner imagen de fondo (icono de PDF) */
+    background-image: url("pdf-icon.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px; /* espacio para el icono */
+    font-style: italic; /* enlaces que terminan con .pdf en cursiva */
+}
+/* enlaces que contienen "example" */
+a[href*="example"] {
+    text-decoration: underline wavy; /* enlaces que contienen "example" con subrayado ondulado */
+}

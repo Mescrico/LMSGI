@@ -1,0 +1,19 @@
+/* imagen con border y shadow dentro de un enlace */
+a img {
+    border: 2px solid blue; /* agrega un borde azul a la imagen dentro del enlace */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* agrega una sombra a la imagen */
+}
+/* al pasar el ratón sobre la imagen dentro del enlace */
+a img:hover {
+    border-color: red; /* cambia el color del borde al pasar el ratón */
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.7); /* cambia la sombra al pasar el ratón */
+}
+/* imagen dentro del enlace con opacidad */
+a img {
+    opacity: 0.8; /* establece la opacidad de la imagen */
+    transition: opacity 0.3s; /* transición suave para el cambio de opacidad */
+}
+/* al cliquear la imagen dentro del enlace */
+a img:active {
+    opacity: 1; /* cambia la opacidad al hacer clic */
+}

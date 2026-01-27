@@ -1,0 +1,30 @@
+/* en vertical */
+nav.vertical {
+    width: 40%;
+}
+
+/* en horizontal grid */
+nav.grid ul {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(2, 1fr) */
+}
+
+/* con float */
+nav.float ul li {
+    float: left;
+    width: 33%;
+    box-sizing: border-box;
+}
+nav.float ul {
+    overflow: auto;
+}
+
+/* con flex */
+nav.flex ul {
+    display: flex;
+}
+nav.flex ul li {
+    flex: 1;
+}
