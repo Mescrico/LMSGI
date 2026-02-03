@@ -1,0 +1,37 @@
+/* imagen de fondo en los aside */
+
+aside {
+    background-image: url(../figuras/Limav-Movie-Genres-Folder-Film-Noir.128.png);
+    background-repeat: repeat-x;
+    margin: 2em;
+    background-color: gray;
+    border-color: silver;
+    width: 80%;
+    padding: 1em;
+    padding-top: 128px; /* no poner em */
+}
+
+@font-face {
+    font-family: Examen;
+    src: url(../fuentes/Kranky-Regular.ttf);
+}
+
+header h1::first-letter {
+    font-family: Examen;
+    font-size: 4em;
+    color: moccasin;
+}
+
+header img {
+    float: left;
+    padding: 1em;
+}
+
+header {
+    border-radius: 50px;
+    border: 2px red dotted;
+    margin: auto;
+    box-shadow: 15px 20px red;
+    padding: 1em;
+    width: 80%;
+}
