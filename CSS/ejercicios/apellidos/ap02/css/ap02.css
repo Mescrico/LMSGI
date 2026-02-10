@@ -35,3 +35,17 @@ header {
     padding: 1em;
     width: 80%;
 }
+
+a[href$='.pdf']::after, a[href$='.tar']::after  {
+    background-color: yellow;
+    content: ' Archivo: ' attr(href);
+    background-image: url(../../../../cap04-box-model/jake.png);
+    padding-right: 52px;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: inline-flex; 
+    align-items: center; 
+    height: 48px; /* evita el recorte vertical */ 
+    line-height: 48px; /* alinea el texto */
+}
+

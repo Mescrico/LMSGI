@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url(../fuentes/Pacifico/Pacifico-Regular.ttf);
+}
+
+h1 {
+    text-align: right;
+    border-bottom: 2px solid black;
+    font-family: 'Pacifico';
+}
+
+blockquote {
+    font-style: italic;
+    border: 6px dashed red;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 20px 15px 5px red;
+    margin-bottom: 2em;
+    margin-left: 0;
+}
+
+blockquote::before {
+    content: 'Cita: ';
+    font-weight: bold;
+}
+
+cite::before {
+    content: 'Autor: ';
+    font-weight: bold;
+}
+
+section h2 + p::first-line, section h3 + p::first-line {
+    color: red;
+    text-transform: uppercase;
+}
+
+[title]::after {
+    font-style: italic;
+    content: attr(title);
+    font-size: 0.5em;
+    vertical-align: top;
+    color: green;
+}
+
+article:nth-of-type(odd) img {
+    float: right;
+    margin-left: 2em;
+    border: 7px double blue;
+}
+
+article:nth-of-type(even) img {
+    float: left;
+    margin-right: 2em;
+    border: 7px double blue;
+}
+
+ol[title="ya veremos"] li {
+    list-style-type: upper-alpha;
+    list-style-position: inside;
+}
+
+ol[title="ya veremos"] {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+footer ol {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+}
+
+footer ol li {
+    background-color: salmon;
+    padding: 2em;
+    text-align: center;
+    border: 2px solid firebrick;
+}
+
+footer ol li:hover {
+    background-color: olive;
+}
+
+footer ol li a{
+    font-weight: bold;
+    color: white;
+}

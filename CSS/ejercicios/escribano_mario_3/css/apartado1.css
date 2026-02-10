@@ -1,0 +1,125 @@
+/* apartado1.css */
+
+
+@font-face {
+    font-family: Pacifico;
+    src: url('../fuentes/Pacifico/Pacifico-Regular.ttf')
+}
+
+header h1 {
+    text-align: right;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    font-family: Pacifico;
+}
+
+header blockquote::before {
+    content: "Cita: ";
+    font-weight: bold;
+}
+
+header blockquote {
+    font-style: italic;
+    border-radius: 20px; /* redondear esquinas */
+    padding: 2em;
+    border: 7px dashed red;
+    box-shadow: 35px 25px 5px red; /* 1.- desplazamiento horizontal, 2.- desplazamiento vertical, 3.- desenfoque, 4.- color */
+    margin: auto;
+}
+
+header cite::before {
+    content: "Autor: ";
+    font-weight: bold;
+}
+
+abbr::after {
+    vertical-align: super;
+    content:  attr(title);
+    font-size: 0.5em;
+    color: green;
+    font-style: italic;
+}
+
+section h2 {
+    margin-top: 1.5em;
+}
+
+section h2 + p, article h3 + p { /* para cada p despues de un h2 o h3 */ 
+    text-transform: uppercase;
+    color: red;
+}
+
+
+section article:nth-of-type(odd) img { /* para las imagenes impares */
+    float: left;
+    margin-right: 1em;
+    border: 5px double blue; 
+}
+
+section article:nth-of-type(even) img { /* para las imagenes pares */
+    float: right;
+    margin-left: 1em;
+    border: 5px double blue;
+}
+
+[title]::after { /* para cada title despues ponemos lo que vale */
+    content: attr(title);
+    font-size: 0.5em;
+    color: green;
+    font-style: italic;
+    vertical-align: super;
+}
+
+ol li {
+    list-style-type: upper-alpha; /* cambiar los numeros por letras */
+    list-style-position: inside; /* poner los numeros dentro del recuadro */
+}
+
+ol {
+    margin-left: 0px; /* quitar la sangria del ol */
+    padding-left: 0px; /* quitar la sangria del ol */
+}
+
+aside dl dt::before {
+    content: url(../figuras/arrow-right-icon.png); /* poner una imagen antes de cada dt */
+} 
+
+dl {
+    counter-reset: total;
+}
+
+dt {
+    counter-increment: total; /* incrementar el contador total */
+    counter-reset: dt;
+}
+
+
+dd {
+    counter-increment: dt; /* incrementar el contador dt */
+
+}
+
+dd::before {
+    content: counter(total) "." counter(dt) " ";
+    background-color: greenyellow;
+}
+
+footer ol { 
+    background-color: lightsalmon;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* dividir en 5 columnas iguales */
+}
+
+footer ol li {
+    text-align: center;
+    list-style-type: none; /* quitar los numeros */
+    border-right: 2px solid black;
+}
+
+footer ol li:hover {
+    background-color: lightyellow;
+}
+footer ol li:nth-child(5) { /* para el ultimo elemento */
+    border-right: none; /* quitar el borde derecho */
+}
